@@ -1,3 +1,9 @@
+/* buat import jenis jenis font */
+@import url(jenisFont.css);
+
+/* untuk import variable root nanti mendingan pindahin sebelum mau submit*/
+@import url(variables.css);
+
 :root{
     --white: #FFFFFF;
     --dark : #00171f;
@@ -6,12 +12,28 @@
     --soft-blue : #C5DDF9;
     --violet : #808AE7;
     --vibrant-blue : #2517BC;
+    --heading-font : DM Sans;
+    --info-font : Space Grotesk;
+    --footer-font : Nunito Sans;
 }
 
+/* 
+tolong dipake rootnya ya gais, soalnya bakal dinilai kebersihan codingnya
 
-/* buat pake rootnya tinggal kayak gini ya ges 
+buat pake rootnya tinggal kayak gini ya ges 
 body{
     background-color: var(--purple);
 }
     harusnya kalo kalian search kata kata yang ada di root, langsung muncul. inget kliknya yang ada --
 */
+
+body {
+    margin: 0;
+}
+
+#Competitions {
+    background-color: var(--violet);
+    font-family: var(--heading-font);
+    display: flex;
+    flex-direction: column;
+}
