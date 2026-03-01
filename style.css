@@ -12,6 +12,7 @@
     --soft-blue : #C5DDF9;
     --violet : #808AE7;
     --vibrant-blue : #2517BC;
+    --mid-blue : #007EA7;
     --heading-font : DM Sans;
     --info-font : Space Grotesk;
     --footer-font : Nunito Sans;
@@ -27,13 +28,104 @@ body{
     harusnya kalo kalian search kata kata yang ada di root, langsung muncul. inget kliknya yang ada --
 */
 
+/* kalo mau pake asset tinggal ./ ya gais */
+
+/* cuman info aja, buat garis yang putih itu, gara gara contentnya lebih kecil daripada body, jadi harusnya nanti ilang kalo dah ada content lain */
+
 body {
     margin: 0;
 }
 
-#Competitions {
+.container {
+    padding: 0 180px 0 180px;
+}
+
+/* Navbar */
+
+/* Hero Section*/
+
+/* Event */
+#events-section {
     background-color: var(--violet);
     font-family: var(--heading-font);
     display: flex;
     flex-direction: column;
 }
+
+#events-section h2 {
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-size: 64px;
+    color: var(--white);
+}
+
+.event-container {
+    display: flex;
+    flex-direction: row;
+    border-radius: 30px;
+    background-color: var(--white);
+    height: auto;
+    padding : 0 70px 0 150px;
+    /* 
+    box-shadow: 0 4px 0.25px 0 black; 
+    */
+   
+}
+
+#events-section img{
+    width: 675px;
+    height: 675px;
+    display: block;
+    margin: 0;
+}
+
+.event-info {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    font-family: var(--info-font);
+    /* 
+    box-shadow: 0 4px 0.25px 0 black; 
+    */
+}
+
+#events-section h3{
+    color : var(--purple);
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.type {
+    color: var(--dark)
+}
+
+#events-section h4{
+    color : var(--mid-blue);
+    font-size: 32px;
+    font-weight: 700;
+}
+
+#events-section p{
+    color : var(--dark);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 125%;
+}
+
+#events-section button{
+    border-radius: 34px;
+    background-color: var(--purple);
+    width: 597px;
+    height: 58px;
+    color: var(--white);
+    font-size: 32px;
+    font-family: var(--info-font);
+    text-align: right;
+    padding-right: 30px;
+}
+
+/* About */
+
+/* Contact */
+
+/* Footer */
