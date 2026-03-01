@@ -15,3 +15,9 @@ body{
 }
     harusnya kalo kalian search kata kata yang ada di root, langsung muncul. inget kliknya yang ada --
 */
+
+#Competitions {
+    background-color: var(--violet);
+    display: flex;
+    flex-direction: column;
+}
