@@ -37,6 +37,7 @@ body {
 }
 
 .container {
+    /* hati hati sama padding ini ya ges */
     padding: 0 180px 0 180px;
 }
 
@@ -72,7 +73,7 @@ body {
     border-radius: 30px;
     background-color: var(--white);
     height: auto;
-    padding : 0 70px 55px 150px;
+    padding : 0 10px 55px 150px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.0.25); 
 }
 
@@ -81,6 +82,7 @@ body {
     height: 675px;
     display: block;
     margin: 0;
+    border: 1px solid red;
 }
 
 .event-info {
