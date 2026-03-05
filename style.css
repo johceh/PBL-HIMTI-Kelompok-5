@@ -44,6 +44,45 @@ body {
 }
 
 /* Navbar */
+#navbar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 115px;
+    background-color: var(--dark);
+    gap: 40px;
+}
+
+.LogoHIMTINavbar{
+    width: 78px;
+    height: 87px;
+    margin-top: 28px;
+    margin-bottom: 28px;
+    margin-left: 76px; 
+}
+
+.NavbarContainer{
+    display: flex;
+    list-style: none;
+    margin-right: 76px;
+    font-weight: 500;
+    font-size: 32px;
+    margin-top: 39px;
+    margin-bottom: 39px;
+    height: 37px;
+}
+
+.NavbarContainer a{
+    color: var(--white);
+    letter-spacing: 0%;
+    text-decoration: none;
+    font-family: var(--heading-font);
+}
+
+.NavbarMenu{
+    margin-left: 25px;
+    width: 108px;
+}
 
 /* Hero Section*/
 
