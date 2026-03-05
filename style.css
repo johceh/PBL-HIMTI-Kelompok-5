@@ -195,3 +195,62 @@ body {
 /* Contact */
 
 /* Footer */
+#footer{
+    height: 590px;
+    padding-top: 200px;
+    padding-inline: 200px;
+    background-color: var(--dark);
+}
+
+.footerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoFooter{
+    display: flex;
+    width: 692px;
+    height: 259px;
+    align-items: center;
+    gap: 25px;
+}
+
+.logoBINUS{
+    width: 396px;
+}
+
+.logoHIMTI{
+   width: 259px;
+}
+
+.sosmed{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.app{
+   display: flex;
+   align-items: center;
+   gap: 12px; 
+}
+
+.app a{
+    text-decoration: none;
+    font-family: var(--footer-font);
+    color: var(--white);
+    font-size: 33.71px;
+}
+
+.app img{
+    width: 44px;
+}
+
+.copyright{
+    text-align: center;
+    font-family: var(--footer-font);
+    margin-top: 45px;
+    font-size: 33.71px;
+    color: var(--white);
+}
