@@ -202,6 +202,51 @@ body {
 
 
 /* About */
+.about-section {
+  background: var(--dark-blue);
+  padding: 80px 10%;
+  color: var(--white);
+  font-family: "Poppins", sans-serif;
+}
+.about-container{
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  align-items: center;
+  gap: 85px;
+}
+
+.about-left{
+  text-align:center;
+  max-width:250px;
+}
+
+.about-logo{
+  width:220px;
+  margin-top: 150px;
+}
+
+
+.about-right{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width:100%;
+}
+
+.about-right p{
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--white);
+    text-align: justify;
+    max-width: 100%
+}
+.about-right h2{
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.2;
+  white-space: nowrap;
+  color: var(--soft-blue);
+}
 
 /* Contact */
 
