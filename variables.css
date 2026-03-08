@@ -1,0 +1,13 @@
+:root{
+    --white: #FFFFFF;
+    --dark : #00171f;
+    --dark-blue : #141352;
+    --purple: #9D29C0;
+    --soft-blue : #C5DDF9;
+    --violet : #808AE7;
+    --vibrant-blue : #2517BC;
+    --mid-blue : #007EA7;
+    --heading-font : DM Sans;
+    --info-font : Space Grotesk;
+    --footer-font : Nunito Sans;
+}

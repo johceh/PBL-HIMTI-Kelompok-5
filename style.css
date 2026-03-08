@@ -4,34 +4,6 @@
 /* untuk import variable root nanti mendingan pindahin sebelum mau submit*/
 @import url(variables.css);
 
-:root{
-    --white: #FFFFFF;
-    --dark : #00171f;
-    --dark-blue : #141352;
-    --purple: #9D29C0;
-    --soft-blue : #C5DDF9;
-    --violet : #808AE7;
-    --vibrant-blue : #2517BC;
-    --mid-blue : #007EA7;
-    --heading-font : DM Sans;
-    --info-font : Space Grotesk;
-    --footer-font : Nunito Sans;
-}
-
-/* 
-tolong dipake rootnya ya gais, soalnya bakal dinilai kebersihan codingnya
-
-buat pake rootnya tinggal kayak gini ya ges 
-body{
-    background-color: var(--purple);
-}
-    harusnya kalo kalian search kata kata yang ada di root, langsung muncul. inget kliknya yang ada --
-*/
-
-/* kalo mau pake asset tinggal ./ ya gais */
-
-/* cuman info aja, buat garis yang putih itu, gara gara contentnya lebih kecil daripada body, jadi harusnya nanti ilang kalo dah ada content lain */
-
 body {
     display: block;
     box-sizing: border-box;
@@ -39,7 +11,6 @@ body {
 }
 
 .container {
-    /* hati hati sama padding ini ya ges */
     padding: 0 180px 0 180px;
 }
 
@@ -106,43 +77,35 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     gap: 40px;
+    width: 100%;
+    margin-right: 180px;
 }
 
 .event-cards {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    /* width: fit-content; */
-    /* max-width: 1200px; */
-    flex: 1;
+    justify-content: center; 
     border-radius: 30px;
     background-color: var(--white);
     height: fit-content;
-    /* border: 5px solid rgb(166, 255, 0); */
-    padding : 0 55px 0 80px;
+    padding : 0 105px 0 55px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25); 
 }
 
 #events-section img{
     width: 675px;
     height: 675px;
-    /* width: 50%; */
     display: block;
-    /* border: 5px solid red; */
 }
 
 .event-info {
     display: flex;
-    /* width: 100%; */
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
     text-align: right;
     font-family: var(--info-font);
-    /* border: 5px solid rgb(85, 0, 255); */
     max-width: 650px;
 }
 
@@ -150,7 +113,6 @@ body {
     color : var(--purple);
     font-size: 48px;
     font-weight: 700;
-    /* border: 5px solid rgb(255, 0, 225); */
     margin: 0 0 15px 0;
 }
 
@@ -163,7 +125,6 @@ body {
     font-size: 32px;
     font-weight: 700;
     margin: 0 0 20px 0;
-    /* border: 5px solid rgb(255, 0, 0); */
 }
 
 #events-section p{
@@ -171,7 +132,6 @@ body {
     font-size: 24px;
     font-weight: 400;
     line-height: 1.25;
-    /* border: 5px solid rgb(43, 255, 0); */
 }
 
 /* Button */
