@@ -4,34 +4,6 @@
 /* untuk import variable root nanti mendingan pindahin sebelum mau submit*/
 @import url(variables.css);
 
-:root{
-    --white: #FFFFFF;
-    --dark : #00171f;
-    --dark-blue : #141352;
-    --purple: #9D29C0;
-    --soft-blue : #C5DDF9;
-    --violet : #808AE7;
-    --vibrant-blue : #2517BC;
-    --mid-blue : #007EA7;
-    --heading-font : DM Sans;
-    --info-font : Space Grotesk;
-    --footer-font : Nunito Sans;
-}
-
-/* 
-tolong dipake rootnya ya gais, soalnya bakal dinilai kebersihan codingnya
-
-buat pake rootnya tinggal kayak gini ya ges 
-body{
-    background-color: var(--purple);
-}
-    harusnya kalo kalian search kata kata yang ada di root, langsung muncul. inget kliknya yang ada --
-*/
-
-/* kalo mau pake asset tinggal ./ ya gais */
-
-/* cuman info aja, buat garis yang putih itu, gara gara contentnya lebih kecil daripada body, jadi harusnya nanti ilang kalo dah ada content lain */
-
 body {
     display: block;
     box-sizing: border-box;
@@ -39,7 +11,6 @@ body {
 }
 
 .container {
-    /* hati hati sama padding ini ya ges */
     padding: 0 180px 0 180px;
 }
 
@@ -49,8 +20,10 @@ body {
     justify-content: flex-start;
     align-items: center;
     height: 115px;
-    background-color: var(--dark);
+    background-color: var(--dark-blue);
     gap: 40px;
+    padding: 10px 0 10px 50px;
+
 }
 
 .LogoHIMTINavbar{
@@ -85,6 +58,65 @@ body {
 }
 
 /* Hero Section*/
+#hero-section{
+    background: url(asset/Background.png);
+    padding: 100px 0 180px 0;
+}
+
+#hero-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    justify-content: center;
+    height: 100%;
+    padding-right: 180px;
+}
+
+#hero-section h1{
+    font-family: var(--heading-font);
+    color: var(--soft-blue);
+}
+
+#heading{
+    font-weight: 500;
+    font-size: 120px;
+    line-height: 1.03;
+    letter-spacing: 0.26;
+}
+
+#semwork{
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 1.03;
+    letter-spacing: 0.10;
+}
+
+#hero-section p{
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.03;
+    color: var(--white);
+    font-family: var(--info-font);
+}
+
+#hero-section img{
+    position: absolute;
+}
+
+#rocket {
+    width: 514px;
+    height: 514px;
+    left: 24px;
+    top: 300px;
+}
+
+#planet {
+    width: 523px;
+    height: 523px;
+    left: 284px;
+    top: 30px;
+}
 
 /* Event */
 #events-section {
@@ -92,6 +124,7 @@ body {
     font-family: var(--heading-font);
     display: flex;
     flex-direction: column;
+    padding-bottom: 120px;
 }
 
 #events-section h2 {
@@ -104,43 +137,43 @@ body {
 #event-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    gap: 30px;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    margin-right: 180px;
 }
 
 .event-cards {
     display: flex;
     flex-direction: row;
+    justify-content: center; 
     border-radius: 30px;
+    gap: 80px;
     background-color: var(--white);
     height: fit-content;
-    /* border: 5px solid rgb(166, 255, 0); */
-    padding : 0 35px 0 15px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.0.25); 
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25); 
 }
 
 #events-section img{
     width: 675px;
     height: 675px;
-    display: block;
-    margin: 0;
-    /* border: 5px solid red; */
 }
 
 .event-info {
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
     text-align: right;
     font-family: var(--info-font);
-    /* border: 5px solid rgb(85, 0, 255); */
+    max-width: 650px;
 }
 
 #events-section h3{
     color : var(--purple);
     font-size: 48px;
     font-weight: 700;
-    /* border: 5px solid rgb(255, 0, 225); */
-    margin-bottom: 15px;
+    margin: 0 0 15px 0;
 }
 
 .type {
@@ -152,7 +185,6 @@ body {
     font-size: 32px;
     font-weight: 700;
     margin: 0 0 20px 0;
-    /* border: 5px solid rgb(255, 0, 0); */
 }
 
 #events-section p{
@@ -160,11 +192,10 @@ body {
     font-size: 24px;
     font-weight: 400;
     line-height: 1.25;
-    border: 5px solid rgb(43, 255, 0);
 }
 
 /* Button */
-#events-section button{
+button{
     border-radius: 34px;
     width: 597px;
     height: 58px;
@@ -177,7 +208,7 @@ body {
     border:none;
 }
 
-#purple-Btn{
+.purple-Btn{
     background-color: var(--purple);
 }
 
@@ -191,8 +222,115 @@ body {
 
 
 /* About */
+.about-section {
+  background: var(--dark-blue);
+  padding: 80px 10%;
+  color: var(--white);
+  font-family: "Poppins", sans-serif;
+}
+.about-container{
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  align-items: center;
+  gap: 82px;
+}
+
+.about-left{
+  text-align:center;
+  max-width:250px;
+}
+
+.about-logo{
+  width:220px;
+  margin-top: 150px;
+}
+
+
+.about-right{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width:100%;
+}
+
+.about-right p{
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--white);
+    text-align: justify;
+    max-width: 100%
+}
+.about-right h2{
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.2;
+  white-space: nowrap;
+  color: var(--soft-blue);
+}
 
 /* Contact */
+
+#contact{
+    background-color: var(--soft-blue);
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Judul */
+.contact-heading{
+    font-family: var(--heading-font);
+    font-size: 64px;
+    font-weight: 700;
+    color: var(--dark-blue);
+    margin-bottom: 20px;
+}
+
+/* Deskripsi */
+.contact-text{
+    font-family: var(--info-font);
+    font-size: 24px;
+    color: var(--dark);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Form */
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    gap: 20px;
+}
+
+/* Input dan textarea */
+.contact-form input,
+.contact-form textarea{
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    font-family: var(--info-font);
+}
+
+/* Tombol submit */
+.contact-form button{
+    background-color: var(--purple);
+    color: var(--white);
+    font-family: var(--info-font);
+    font-size: 24px;
+    border: none;
+    border-radius: 30px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.contact-form button:hover{
+    background-color: var(--vibrant-blue);
+}
 
 /* Footer */
 #footer{

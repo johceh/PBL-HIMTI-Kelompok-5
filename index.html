@@ -8,7 +8,7 @@
 </head>
 <body>
     <div id="navbar">
-        <img src="./asset/Himti-PutihEdit.png" class="LogoHIMTIHeader" alt="Logo HIMTI">
+        <img src="./asset/Himti-PutihEdit.png" class="LogoHIMTINavbar" alt="Logo HIMTI">
         <ul class="NavbarContainer">
             <li class="NavbarMenu"><a href="#navbar">Home</a></li>
             <li class="NavbarMenu"><a href="#hero-section">Events</a></li>
@@ -16,7 +16,15 @@
             <li class="NavbarMenu"><a href="#contact">Contact</a></li>
         </ul>
     </div>
-    <div id="hero-section"></div>
+    <div id="hero-section" class="container">
+        <img id="rocket" src="asset/Rocket.png">
+        <img id="planet" src="asset/Planet.png">
+        <div id="hero-info">
+            <h1><span id="heading">HIMTI</span> <br><span id="semwork">SEMWORK</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button class="purple-Btn">Learn more →</button>
+        </div>
+    </div>
     <div class="container" id="events-section">
         <h2 id="event-heading">EVENTS</h2>
         <div id="event-container">
@@ -30,14 +38,14 @@
                         <br>
                         <b>Code smarter, not harder.</b> 💡💻
                     </p>
-                    <button id="purple-Btn">Register →</button>
+                    <button class="purple-Btn">Register →</button>
                 </div>
             </div>
             <div class="event-cards">
                 <img src="./asset/Phone.png">
                 <div class="event-info">
                     <h3> “Boosting Your UI/UX Fundamentals” <span class="type">Workshop</span></h3>
-                    <h4>January 15, 2025 | 15:00-17:00 GMT+7 <br>Online by Zoom meeting</h4>
+                    <h4>January 15, 2025 | 15:00-17:00 GMT+7 Online by Zoom meeting</h4>
                     <p>
                         Dive into core principles, best practices, and hands-on exercises that will enhance your ability to <b>create user-friendly and visually stunning interfaces.</b> Whether you're a beginner or looking to refine your skills, this workshop provides valuable insights and techniques to take your designs to the next level.
                         <br>
@@ -48,8 +56,46 @@
             </div>
         </div>
     </div>
-    <div id="about"></div>
-    <div id="contact"></div>
+    <div id="about" class="about-section">
+  <div class="about-container">
+
+    <div class="about-left">
+      <img src="./asset/Himti-Putih.png" class="about-logo" alt="HIMTI Logo">
+
+    </div>
+
+    <div class="about-right">
+      <h2>ABOUT HIMTI SEMWORK</h2>
+
+      <p>
+      <strong>HIMTI SemWork</strong> is an exciting series of <strong>seminars</strong> and <strong>workshops</strong> hosted by HIMTI BINUS University, focusing on the latest trends and advancements in technology and computer science. 
+      hosted by <strong>HIMTI BINUS University</strong>, focusing on the latest trends and advancements in technology and computer science. 
+      These events bring together industry experts, thought leaders, and enthusiastic learners to explore various topics, from software development and UI/UX design to artificial intelligence and cybersecurity.
+       Participants will gain valuable knowledge, hands-on experience, 
+       and the opportunity to network with professionals and peers in the tech community.
+      </p>
+
+    </div>
+
+  </div>
+</div>
+    <div id="contact" class="container">
+        <h2 class="contact-heading">CONTACT US</h2>
+
+        <p class="contact-text">
+            Have questions or want to collaborate with us? Feel free to reach out!
+        </p>
+
+        <form class="contact-form">
+            <input type="text" placeholder="Name" required>
+
+            <input type="email" placeholder="Email" required>
+
+            <textarea placeholder="Message" rows="5" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
     <div id="footer">
         <div class="footerContainer">
             <div class="logoFooter">
