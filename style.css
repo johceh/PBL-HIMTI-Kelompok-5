@@ -22,6 +22,8 @@ body {
     height: 115px;
     background-color: var(--dark-blue);
     gap: 40px;
+    padding: 10px 0 10px 50px;
+
 }
 
 .LogoHIMTINavbar{
@@ -56,6 +58,65 @@ body {
 }
 
 /* Hero Section*/
+#hero-section{
+    background: url(asset/Background.png);
+    padding: 100px 0 180px 0;
+}
+
+#hero-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    justify-content: center;
+    height: 100%;
+    padding-right: 180px;
+}
+
+#hero-section h1{
+    font-family: var(--heading-font);
+    color: var(--soft-blue);
+}
+
+#heading{
+    font-weight: 500;
+    font-size: 120px;
+    line-height: 1.03;
+    letter-spacing: 0.26;
+}
+
+#semwork{
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 1.03;
+    letter-spacing: 0.10;
+}
+
+#hero-section p{
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.03;
+    color: var(--white);
+    font-family: var(--info-font);
+}
+
+#hero-section img{
+    position: absolute;
+}
+
+#rocket {
+    width: 514px;
+    height: 514px;
+    left: 24px;
+    top: 300px;
+}
+
+#planet {
+    width: 523px;
+    height: 523px;
+    left: 284px;
+    top: 30px;
+}
 
 /* Event */
 #events-section {
@@ -87,16 +148,15 @@ body {
     flex-direction: row;
     justify-content: center; 
     border-radius: 30px;
+    gap: 80px;
     background-color: var(--white);
     height: fit-content;
-    padding : 0 105px 0 55px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25); 
 }
 
 #events-section img{
     width: 675px;
     height: 675px;
-    display: block;
 }
 
 .event-info {
@@ -135,7 +195,7 @@ body {
 }
 
 /* Button */
-#events-section button{
+button{
     border-radius: 34px;
     width: 597px;
     height: 58px;
@@ -148,7 +208,7 @@ body {
     border:none;
 }
 
-#purple-Btn{
+.purple-Btn{
     background-color: var(--purple);
 }
 
